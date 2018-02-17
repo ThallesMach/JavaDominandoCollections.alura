@@ -1,7 +1,8 @@
 
-//
+//	Curso Java: Dominando as Collections
 	//  01 Trabalhando com ArrayList
 		// site: docs.oracle.com/javase/8/docs/api/
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
