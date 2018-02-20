@@ -29,4 +29,9 @@ public class Curso {
     public void adiciona(Aula aula) {
         this.aulas.add(aula);
     }
+
+	public char[] getTempoTotal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

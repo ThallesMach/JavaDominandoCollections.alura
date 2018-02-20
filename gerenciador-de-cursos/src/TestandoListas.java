@@ -3,58 +3,55 @@
 	//  01 Trabalhando com ArrayList
 		// site: docs.oracle.com/javase/8/docs/api/
 
-import java.util.List;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-class TestandoListas {
+public class TestandoListas {
 
 	public static void main(String[] args) {
 
-		String aula1 = "Modelando a classe Aula";
-		String aula2 = "Conhecendo mais de listas";
+		String aula1 = "Conhecendo mais de listas";
+		String aula2 = "Modelando a classe Aula";
 		String aula3 = "Trabalhando com Cursos e Sets";
 
 		ArrayList<String> aulas = new ArrayList<>();
+
 		aulas.add(aula1);
 		aulas.add(aula2);
 		aulas.add(aula3);
 
 		System.out.println(aulas);
-		System.out.println("-----------------------");
 
 		aulas.remove(0);
+
 		System.out.println(aulas);
-		System.out.println("------------------------");
 
 		for (String aula : aulas) {
-			System.out.println("Aulas: " + aulas);
+			System.out.println("Aula: " + aula);
 		}
-		System.out.println("------------------------");
 
 		String primeiraAula = aulas.get(0);
-		System.out.println("_A primeira aula é: " + primeiraAula);
-		System.out.println("------------------------");
+		System.out.println("A primeira aula Ã© " + primeiraAula);
 
 		for (int i = 0; i < aulas.size(); i++) {
-			System.out.println("Aula : " + aulas.get(i));
+			System.out.println("Aula: " + aulas.get(i));
 		}
-		;
-		System.out.println("_Quantidade de elemento tem no for: " + aulas.size());
-		System.out.println("------------------------");
+
+		System.out.println(aulas.size());
 
 		aulas.forEach(aula -> {
-			System.out.println("_perdorrendo:");
-			System.out.println("_Aula " + aula);
+			System.out.println("Percorrendo: ");
+			System.out.println("Aula " + aula);
 		});
-		System.out.println("------------------------");
 
-		
-		
+		aulas.add("Aumentando nosso conhecimento");
+		System.out.println(aulas);
+
 		Collections.sort(aulas);
+
 		System.out.println("Depois de ordenado:");
 		System.out.println(aulas);
-		System.out.println("------------------------");
 
 	}
 }
