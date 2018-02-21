@@ -1,18 +1,26 @@
 
 //
 
+
+import java.util.List;
+
 public class TestaCurso {
-    public static void main(String[] args) {
-        Curso javaColecoes = new Curso("Dominando as colecoes do Java",
-                    "Paulo Silveira");
 
-        javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
-        javaColecoes.adiciona(new Aula("Criando uma Aula", 20));
-        javaColecoes.adiciona(new Aula("Modelando com colecoes", 24));
+	public static void main(String[] args) {
 
-        // tentando adicionar da maneira "antiga". Podemos fazer isso? Teste:
-        javaColecoes.getAulas().add(new Aula("Trabalhando com ArrayList", 21));
+		Curso javaColecoes = new Curso("Dominando as coleções do Java",
+				"Paulo Silveira");
 
-        System.out.println(javaColecoes.getAulas());
-    }
+		javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
+		javaColecoes.adiciona(new Aula("Criando uma Aula", 20));
+		javaColecoes.adiciona(new Aula("Modelando com coleções", 22));
+
+		List<Aula> aulas = javaColecoes.getAulas();
+
+		System.out.println(javaColecoes.getAulas());
+		
+		System.out.println(javaColecoes);
+
+	}
+
 }
