@@ -1,10 +1,6 @@
 
 //
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Collections;
-
 public class TestaCurso {
     public static void main(String[] args) {
         Curso javaColecoes = new Curso("Dominando as colecoes do Java",
